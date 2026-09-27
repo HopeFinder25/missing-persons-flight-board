@@ -1,0 +1,3111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="refresh" content="900">
+<title>Flight Board — Missing Persons Alert Nationwide</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #0b0e1a; color: #f5f5f5; font-family: "SF Mono", "Roboto Mono", Consolas, Menlo, monospace;
+         padding: 16px 12px 40px; max-width: 760px; margin: 0 auto; }
+  header { border-bottom: 3px solid #ffb000; padding-bottom: 14px; margin-bottom: 18px; }
+  .live { display: inline-flex; align-items: center; gap: 8px; color: #ffb000; font-size: 15px;
+           letter-spacing: 2px; font-weight: bold; }
+  .dot { width: 12px; height: 12px; border-radius: 50%; background: #34d399;
+         box-shadow: 0 0 10px #34d399; animation: blink 2s infinite; }
+  @keyframes blink { 50% { opacity: 0.4; } }
+  h1 { font-size: 44px; letter-spacing: 6px; color: #ffb000; margin: 10px 0 4px; }
+  .sub { font-size: 16px; color: #c9c9c9; }
+  .counts { display: flex; gap: 10px; margin-top: 12px; flex-wrap: wrap; }
+  .counts span { font-size: 17px; font-weight: bold; padding: 8px 14px; border-radius: 6px; letter-spacing: 1px; }
+  .c-active { background: #063; color: #d1fae5; }
+  .c-hold { background: #5c3d00; color: #fde68a; }
+  h2 { font-size: 22px; letter-spacing: 3px; color: #ffb000; margin: 26px 0 4px; }
+  h2 small { display: block; font-size: 14px; letter-spacing: 0; color: #9a9a9a; margin-top: 4px; }
+  .row { display: flex; justify-content: space-between; gap: 12px; background: #141829;
+          border: 1px solid #2a3352; border-left: 6px solid #34d399;
+          border-radius: 8px; padding: 14px; margin: 10px 0; }
+  .row.hold { border-left-color: #ffb000; }
+  .r-name { font-size: 24px; font-weight: bold; color: #ffffff; line-height: 1.25; }
+  .r-meta { font-size: 17px; color: #d7d7d7; margin-top: 6px; }
+  .r-note { font-size: 15px; color: #fbbf24; margin-top: 6px; }
+  .r-side { text-align: right; flex-shrink: 0; display: flex; flex-direction: column;
+             align-items: flex-end; gap: 10px; }
+  .pill { font-size: 15px; font-weight: bold; letter-spacing: 2px; padding: 6px 12px; border-radius: 20px; }
+  .pill.active { background: #34d399; color: #052e1b; }
+  .pill.hold { background: #ffb000; color: #3a2700; }
+  .call { display: block; font-size: 15px; color: #7dd3fc; text-decoration: none; line-height: 1.5;
+           border: 1px solid #1d4ed8; border-radius: 8px; padding: 8px 10px; background: #0f1e3d; }
+  .call .tap { display: block; font-size: 11px; letter-spacing: 2px; color: #93c5fd; margin-top: 2px; }
+  .call.no-link { color: #9a9a9a; border-color: #333; background: none; }
+  footer { margin-top: 30px; padding-top: 14px; border-top: 1px solid #2a3352;
+            font-size: 14px; color: #8a8a8a; line-height: 1.6; }
+  .empty { color: #8a8a8a; font-size: 16px; padding: 12px 0; }
+</style>
+</head>
+<body>
+<header>
+  <div class="live"><span class="dot"></span> LIVE &nbsp;·&nbsp; Updated Sep 27, 2026 · 12:00 PM MDT</div>
+  <h1>FLIGHT BOARD</h1>
+  <div class="sub">Missing Persons Alert Nationwide — every active case, one screen</div>
+  <div class="counts"><span class="c-active">247 ACTIVE</span><span class="c-hold">30 ON HOLD</span></div>
+</header>
+
+<h2>ACTIVE <small>Still missing — these are clear to share</small></h2>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Vonney</div>
+    <div class="r-meta">Age 79 &nbsp;·&nbsp; MD &nbsp;·&nbsp; Missing since date unknown</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+14109967800">MD State Police North East Barrack (410) 996-7800<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Demareon Moore</div>
+    <div class="r-meta">Age 26 &nbsp;·&nbsp; TX &nbsp;·&nbsp; Missing since date unknown</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+12547507500">Waco Police Department 254-750-7500<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Yeshua Avalos</div>
+    <div class="r-meta">Age 13 &nbsp;·&nbsp; NM &nbsp;·&nbsp; Missing since date unknown</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+15053346622">Farmington PD dispatch (505) 334-6622<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Linda May Krieger</div>
+    <div class="r-meta">Age 67 &nbsp;·&nbsp; AL &nbsp;·&nbsp; Missing since date unknown</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+13342221155">Andalusia Police Department (334) 222-1155<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Jonas Hagins</div>
+    <div class="r-meta">Age — &nbsp;·&nbsp; GA &nbsp;·&nbsp; Missing since date unknown</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <div class="call no-link">—</div>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Camille White</div>
+    <div class="r-meta">Age 15 &nbsp;·&nbsp; TX &nbsp;·&nbsp; Missing since date unknown</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <div class="call no-link">—</div>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Beverly Kate Pille</div>
+    <div class="r-meta">Age 47 &nbsp;·&nbsp; FL &nbsp;·&nbsp; Missing since unknown</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+18632986200">Polk County Sheriff&#x27;s Office - 863-298-6200 (Case #26-39142)<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Kahseem Omari Que-Sean Corpening</div>
+    <div class="r-meta">Age 19 &nbsp;·&nbsp; NC &nbsp;·&nbsp; Missing since about 3 weeks prior to alert</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+18282862911">Rutherford County 911 828-286-2911 or Crime Stoppers 828-286-TIPS (8477)<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Aryanah Harrison</div>
+    <div class="r-meta">Age 16 &nbsp;·&nbsp; PA &nbsp;·&nbsp; Missing since 09/27/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+15702877633">Luzerne Borough Police Department (570) 287-7633 ext. 107<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Beeny Mbo</div>
+    <div class="r-meta">Age 2 &nbsp;·&nbsp; OH &nbsp;·&nbsp; Missing since 09/27/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+16146454545">Columbus Police Radio Room 614-645-4545<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Shayla Kensley Davis</div>
+    <div class="r-meta">Age 16 &nbsp;·&nbsp; SC &nbsp;·&nbsp; Missing since 09/26/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <div class="call no-link">Fairfield County Sheriff&#x27;s Office (call 911)</div>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Victoria Rojas Villegas</div>
+    <div class="r-meta">Age 14 &nbsp;·&nbsp; AZ &nbsp;·&nbsp; Missing since 09/26/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+14806442211">Mesa PD Missing Persons Unit, Inv. Vega (480) 644-2211 (24 hrs)<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Roger Stewart</div>
+    <div class="r-meta">Age 13 &nbsp;·&nbsp; TX &nbsp;·&nbsp; Missing since 09/26/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+12542985500">Temple Police Department 254.298.5500<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Michael Allen Miller</div>
+    <div class="r-meta">Age 43 &nbsp;·&nbsp; MI &nbsp;·&nbsp; Missing since 09/26/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+15174834600">Lansing Police Department 517-483-4600<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Tanner Rust</div>
+    <div class="r-meta">Age 22 &nbsp;·&nbsp; MT &nbsp;·&nbsp; Missing since 09/26/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <div class="call no-link">Great Falls MT Police Department - Call 911</div>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Julio Nieves-Hernandez</div>
+    <div class="r-meta">Age 85 &nbsp;·&nbsp; AZ &nbsp;·&nbsp; Missing since 09/26/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+18008435678">Phoenix Police Department; NCMEC 1-800-843-5678<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Justin Arviso</div>
+    <div class="r-meta">Age 14 &nbsp;·&nbsp; AZ &nbsp;·&nbsp; Missing since 09/26/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+16233337000">Avondale AZ Police Department (623) 333-7000<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Bella Hinton</div>
+    <div class="r-meta">Age 15 &nbsp;·&nbsp; FL &nbsp;·&nbsp; Missing since 09/26/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <div class="call no-link">Hollywood Police Department (FL)</div>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Edna Clemons</div>
+    <div class="r-meta">Age 67 &nbsp;·&nbsp; MS &nbsp;·&nbsp; Missing since 09/26/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+16015447900">Hattiesburg Police Department (601) 544-7900<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Carlos Flores</div>
+    <div class="r-meta">Age 74 &nbsp;·&nbsp; TX &nbsp;·&nbsp; Missing since 09/26/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+17132749270">Harris County Sheriff&#x27;s Office 713-274-9270<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">William D. Roberts</div>
+    <div class="r-meta">Age 74 &nbsp;·&nbsp; MO &nbsp;·&nbsp; Missing since 09/26/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+18162345043">Kansas City Police Department (816) 234-5043 or 911<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Charisma Love Phillips</div>
+    <div class="r-meta">Age 18 &nbsp;·&nbsp; NM &nbsp;·&nbsp; Missing since 09/26/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+15053346622">Farmington Police Department (505) 334-6622<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">John Leon Allan Kirkland</div>
+    <div class="r-meta">Age 63 &nbsp;·&nbsp; FL &nbsp;·&nbsp; Missing since 09/26/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+13527932621">Sumter County Sheriff&#x27;s Office (352) 793-2621<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Steven Segura</div>
+    <div class="r-meta">Age — &nbsp;·&nbsp; NM &nbsp;·&nbsp; Missing since 09/26/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+15052422677">APD Missing Persons Unit (505) 242-2677<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Robert Gurnee Jr.</div>
+    <div class="r-meta">Age 82 &nbsp;·&nbsp; AZ &nbsp;·&nbsp; Missing since 09/26/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+19287631999">Bullhead City Police Department (928) 763-1999<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Joseph James Turner</div>
+    <div class="r-meta">Age 82 &nbsp;·&nbsp; AL &nbsp;·&nbsp; Missing since 09/26/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+12053289311">Birmingham Police Department (205) 328-9311<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Soleil Smith</div>
+    <div class="r-meta">Age 17 &nbsp;·&nbsp; AZ &nbsp;·&nbsp; Missing since 09/26/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+16233337000">Avondale PD 623-333-7000<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Arielle Hayden</div>
+    <div class="r-meta">Age 17 &nbsp;·&nbsp; AZ &nbsp;·&nbsp; Missing since 09/26/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+16233337000">Avondale Police Department 623-333-7000<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Zoey Northrup</div>
+    <div class="r-meta">Age 15 &nbsp;·&nbsp; FL &nbsp;·&nbsp; Missing since 09/26/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+17278478102">Pasco Sheriff&#x27;s Non-Emergency Line 727-847-8102, option 7<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Noah Hazel Tuggle</div>
+    <div class="r-meta">Age 12 &nbsp;·&nbsp; GA &nbsp;·&nbsp; Missing since 09/26/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+17068211020">Richmond County Sheriff&#x27;s Office 706-821-1020 or 706-821-1080<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Two juveniles (girl 14, boy 6) — names not released</div>
+    <div class="r-meta">Age 14 &amp; 6 &nbsp;·&nbsp; AL &nbsp;·&nbsp; Missing since 09/26/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+13345760915">Lanett Police Department 334-576-0915 or 911<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Kirk Blount</div>
+    <div class="r-meta">Age 64 &nbsp;·&nbsp; PA &nbsp;·&nbsp; Missing since 09/25/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+12156863243">Philadelphia PD East Detectives (215) 686-3243<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Caleb Johnson</div>
+    <div class="r-meta">Age 3 &nbsp;·&nbsp; TN &nbsp;·&nbsp; Missing since 09/25/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+14236982525">Chattanooga PD 423-698-2525 or 911<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Jonyiah Tilus</div>
+    <div class="r-meta">Age 15 &nbsp;·&nbsp; FL &nbsp;·&nbsp; Missing since 09/25/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+19543214274">BSO Missing Persons Det. Leonard Charla 954-321-4274; BSO non-emergency 954-764-4357<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Ronald &quot;Dave&quot; Magby</div>
+    <div class="r-meta">Age 81 &nbsp;·&nbsp; AR &nbsp;·&nbsp; Missing since 09/25/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <div class="call no-link">Fayetteville PD / 911 if seen</div>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Stephen Burns</div>
+    <div class="r-meta">Age 15 &nbsp;·&nbsp; AZ &nbsp;·&nbsp; Missing since 09/25/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+14803508311">Tempe Police Department 480-350-8311 (case 2026-97855)<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Tyler Stranahan</div>
+    <div class="r-meta">Age — &nbsp;·&nbsp; NY &nbsp;·&nbsp; Missing since 09/25/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <div class="call no-link">Buffalo Police Department / Call 911</div>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">David Cheng</div>
+    <div class="r-meta">Age 83 &nbsp;·&nbsp; CA &nbsp;·&nbsp; Missing since 09/25/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <div class="call no-link">Milpitas Police Department / Call 911</div>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Lori Beck</div>
+    <div class="r-meta">Age 15 &nbsp;·&nbsp; SC &nbsp;·&nbsp; Missing since 09/25/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+18035342812">Orangeburg Department of Public Safety 803-534-2812<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Nyliana Banks</div>
+    <div class="r-meta">Age 15 &nbsp;·&nbsp; NY &nbsp;·&nbsp; Missing since 09/25/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <div class="call no-link">Monroe County Sheriff&#x27;s Office (call 911)</div>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Skyler Hasley</div>
+    <div class="r-meta">Age 14 &nbsp;·&nbsp; SC &nbsp;·&nbsp; Missing since 09/25/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+18035342812">Orangeburg Department of Public Safety 803-534-2812<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Mason Shaw</div>
+    <div class="r-meta">Age 17 &nbsp;·&nbsp; PA &nbsp;·&nbsp; Missing since 09/25/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+17172435252">Carlisle Police Department (717) 243-5252<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Tyrese Williams</div>
+    <div class="r-meta">Age 19 &nbsp;·&nbsp; MS &nbsp;·&nbsp; Missing since 09/25/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <div class="call no-link">Jackson Police Department — Call 911</div>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Jay&#x27;Miyhia Tashell Sullivan</div>
+    <div class="r-meta">Age 15 &nbsp;·&nbsp; GA &nbsp;·&nbsp; Missing since 09/25/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+17068211020">Richmond County Sheriff&#x27;s Office 706-821-1020 or 706-821-1080<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Joe&#x27;el Gaither</div>
+    <div class="r-meta">Age 15 &nbsp;·&nbsp; TX &nbsp;·&nbsp; Missing since 09/24/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+12103356000">Bexar County Sheriff&#x27;s Office 210-335-6000; missingpersons@bexar.org<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Ariel Nicole Martin</div>
+    <div class="r-meta">Age 17 &nbsp;·&nbsp; CO &nbsp;·&nbsp; Missing since 09/24/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+17209132000">Denver PD 720-913-2000 (CBI Missing Indigenous Person Alert)<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Lois Wardlaw</div>
+    <div class="r-meta">Age 20 &nbsp;·&nbsp; MN &nbsp;·&nbsp; Missing since 09/24/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+19522585321">Hennepin County Dispatch (952) 258-5321 / 911<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Jerome Busby</div>
+    <div class="r-meta">Age 77 &nbsp;·&nbsp; CA &nbsp;·&nbsp; Missing since 09/24/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <div class="call no-link">911 (report sightings by phone)</div>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Arri Martin</div>
+    <div class="r-meta">Age 17 &nbsp;·&nbsp; GA &nbsp;·&nbsp; Missing since 09/24/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+14789863489">Jones County Sheriff&#x27;s Office 478-986-3489<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Marcus Tolbert</div>
+    <div class="r-meta">Age 16 &nbsp;·&nbsp; IL &nbsp;·&nbsp; Missing since 09/24/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+13127478380">Chicago PD Area One SVU 312-747-8380 / 911; Detective Division 312-746-9661<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Haleef Washington</div>
+    <div class="r-meta">Age 14 &nbsp;·&nbsp; PA &nbsp;·&nbsp; Missing since 09/24/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+12156863183">PPD Southwest Detective Division 215-686-3183 or 215-686-3184, or 911<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Myraline Whitaker</div>
+    <div class="r-meta">Age 77 &nbsp;·&nbsp; CA &nbsp;·&nbsp; Missing since 09/24/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+12139228205">LAPD Wilshire Division (213) 922-8205 or 911<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Robert Gottier</div>
+    <div class="r-meta">Age 90 &nbsp;·&nbsp; CT &nbsp;·&nbsp; Missing since 09/24/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <div class="call no-link">Vernon PD - call 911</div>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">August Branchaud</div>
+    <div class="r-meta">Age 15 &nbsp;·&nbsp; ND &nbsp;·&nbsp; Missing since 09/24/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+17014517660">Fargo Police Department (701) 451-7660<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Annalee Marie Perez</div>
+    <div class="r-meta">Age 16 &nbsp;·&nbsp; CA &nbsp;·&nbsp; Missing since 09/24/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+16613277111">Bakersfield Police Department (661) 327-7111<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Arthur Kayon Torre DeOliveira</div>
+    <div class="r-meta">Age 16 &nbsp;·&nbsp; MA &nbsp;·&nbsp; Missing since 09/24/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+19787441212">Salem Police Department (MA) (978) 744-1212<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Imani L. Moten</div>
+    <div class="r-meta">Age 14 &nbsp;·&nbsp; MA &nbsp;·&nbsp; Missing since 09/24/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+14137876302">Springfield Police Department (MA) (413) 787-6302<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Timofey Gavrilyuk</div>
+    <div class="r-meta">Age 26 &nbsp;·&nbsp; MA &nbsp;·&nbsp; Missing since 09/24/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+14135625411">Westfield Police Department (413) 562-5411<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Jaleeya Mae Collins</div>
+    <div class="r-meta">Age 16 &nbsp;·&nbsp; GA &nbsp;·&nbsp; Missing since 09/24/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+19127487333">Pooler Police Department (GA), (912) 748-7333; NCMEC 1-800-843-5678<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Kadri Faye Hegwood</div>
+    <div class="r-meta">Age 14 &nbsp;·&nbsp; TX &nbsp;·&nbsp; Missing since 09/24/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+15128648282">Williamson County Sheriff&#x27;s Office (TX), (512) 864-8282; NCMEC 1-800-843-5678<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Anthony Brooks III</div>
+    <div class="r-meta">Age 17 &nbsp;·&nbsp; CA &nbsp;·&nbsp; Missing since 09/24/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+19513542007">Riverside Police (951) 354-2007, report #260025699<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Earnest Tarver</div>
+    <div class="r-meta">Age 67 &nbsp;·&nbsp; GA &nbsp;·&nbsp; Missing since 09/23/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+17707247710">DeKalb County Police Department 770-724-7710<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Julio Delvalle</div>
+    <div class="r-meta">Age 85 &nbsp;·&nbsp; FL &nbsp;·&nbsp; Missing since 09/23/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+13026335000">Delaware State Police Troop 6 (302) 633-5000; DE Crime Stoppers 1-800-847-3333<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Brielle De Senneville</div>
+    <div class="r-meta">Age 15 &nbsp;·&nbsp; KY &nbsp;·&nbsp; Missing since 09/23/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+15025745673">Louisville Metro PD 911 or 502-574-5673<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Doreen Yallup</div>
+    <div class="r-meta">Age 16 &nbsp;·&nbsp; WA &nbsp;·&nbsp; Missing since 09/23/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+13607042740">Thurston County SO via WA State Patrol 360-704-2740; if seen 911<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Makenzi Ring</div>
+    <div class="r-meta">Age 17 &nbsp;·&nbsp; FL &nbsp;·&nbsp; Missing since 09/23/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+13522492790">Citrus County Sheriff&#x27;s Office 352-249-2790<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Unidentified male (Hesperia, MI)</div>
+    <div class="r-meta">Age — &nbsp;·&nbsp; MI &nbsp;·&nbsp; Missing since 09/23/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+12314502799">Hesperia PD Chief Joe Catts 231-450-2799; Oceana Co Dispatch 231-869-5858<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Bennie Long</div>
+    <div class="r-meta">Age 73 &nbsp;·&nbsp; OK &nbsp;·&nbsp; Missing since 09/23/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <div class="call no-link">Ponca City PD / 911</div>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Amari Rodriquez</div>
+    <div class="r-meta">Age 16 &nbsp;·&nbsp; NY &nbsp;·&nbsp; Missing since 09/23/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <div class="call no-link">911 (Buffalo PD)</div>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Anastasia Jones</div>
+    <div class="r-meta">Age 16 &nbsp;·&nbsp; VA &nbsp;·&nbsp; Missing since 09/23/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+17579232350">Suffolk PD 757-923-2350; Crime Line 1-888-LOCK-U-UP opt 5<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Darrell Taylor</div>
+    <div class="r-meta">Age 16 &nbsp;·&nbsp; VA &nbsp;·&nbsp; Missing since 09/23/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+17579232350">Suffolk PD 757-923-2350; Crime Line 1-888-LOCK-U-UP opt 5<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Khalil Jones</div>
+    <div class="r-meta">Age 15 &nbsp;·&nbsp; VA &nbsp;·&nbsp; Missing since 09/23/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+17579232350">Suffolk PD 757-923-2350; Crime Line 1-888-LOCK-U-UP opt 5<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Keanu Andrez Czech</div>
+    <div class="r-meta">Age 28 &nbsp;·&nbsp; CA &nbsp;·&nbsp; Missing since 09/23/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+13238905500">LASD Homicide Bureau, Missing Persons Detail (323) 890-5500; Crime Stoppers (800) 222-TIPS<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Angelynn Barrios</div>
+    <div class="r-meta">Age 13 &nbsp;·&nbsp; VA &nbsp;·&nbsp; Missing since 09/23/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+17037926500">Dumfries PD (703) 792-6500<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Jay Moriwaki</div>
+    <div class="r-meta">Age 13 &nbsp;·&nbsp; AK &nbsp;·&nbsp; Missing since 09/23/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+19077868900">Anchorage Police Dispatch 311 (option #1) or 907-786-8900<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Brielle &quot;Kyree&quot; De Senneville Freano</div>
+    <div class="r-meta">Age 15 &nbsp;·&nbsp; KY &nbsp;·&nbsp; Missing since 09/23/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <div class="call no-link">911 or 574-LMPD (5673), Louisville Metro Police Dept</div>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Kha&#x27;eem Stevens</div>
+    <div class="r-meta">Age 12 &nbsp;·&nbsp; PA &nbsp;·&nbsp; Missing since 09/23/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+12156863183">Philadelphia PD Southwest Detective Division 215-686-3183<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Brayleigh Gilder</div>
+    <div class="r-meta">Age 15 &nbsp;·&nbsp; FL &nbsp;·&nbsp; Missing since 09/23/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+18508914200">Tallahassee PD (850) 891-4200, case 2026-152054<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Kori Caney</div>
+    <div class="r-meta">Age 14 &nbsp;·&nbsp; FL &nbsp;·&nbsp; Missing since 09/23/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+18139316500">Tampa PD (813) 931-6500; FDLE MEPIC 1-888-356-4774<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Abdur Khan</div>
+    <div class="r-meta">Age 30 &nbsp;·&nbsp; IL &nbsp;·&nbsp; Missing since 09/23/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+13127448266">Chicago PD Area Three SVU (312) 744-8266 or 911<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Jordan Lily Cubellis</div>
+    <div class="r-meta">Age 17 &nbsp;·&nbsp; TX &nbsp;·&nbsp; Missing since 09/23/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+13618862600">Corpus Christi Police Department (TX), (361) 886-2600; NCMEC 1-800-843-5678<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">William Samuel Simpson</div>
+    <div class="r-meta">Age 89 &nbsp;·&nbsp; PA &nbsp;·&nbsp; Missing since 09/22/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+12156863153">Philadelphia PD Northeast Detectives 215-686-3153 or 911<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Beverly Dabney</div>
+    <div class="r-meta">Age 16 &nbsp;·&nbsp; DE &nbsp;·&nbsp; Missing since 09/22/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+13026545151">Wilmington PD 302-654-5151<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">William Henry Thomas</div>
+    <div class="r-meta">Age 72 &nbsp;·&nbsp; GA &nbsp;·&nbsp; Missing since 09/22/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+17705345251">Gainesville PD 770-534-5251 or 911<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Patricia Powell</div>
+    <div class="r-meta">Age 81 &nbsp;·&nbsp; CA &nbsp;·&nbsp; Missing since 09/22/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <div class="call no-link">911 (CHP Silver Alert on behalf of LAPD)</div>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Alexander Sheer</div>
+    <div class="r-meta">Age 24 &nbsp;·&nbsp; WV &nbsp;·&nbsp; Missing since 09/22/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+13043699913">Boone County Sheriff&#x27;s Office (304) 369-9913<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Ollie Bertran IV</div>
+    <div class="r-meta">Age 17 &nbsp;·&nbsp; VA &nbsp;·&nbsp; Missing since 09/22/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+18046465100">Richmond Police Department (804) 646-5100<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Takai Beyale</div>
+    <div class="r-meta">Age 19 &nbsp;·&nbsp; NM &nbsp;·&nbsp; Missing since 09/22/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+15052422677">APD Missing Persons Unit (505) 242-2677; apdmissingpersons@cabq.gov<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Jasmine Ramirez-Martinez</div>
+    <div class="r-meta">Age 15 &nbsp;·&nbsp; NJ &nbsp;·&nbsp; Missing since 09/22/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+16092678300">Willingboro PD Dispatch 609-267-8300 or 911<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Angel Mauricio Bonilla</div>
+    <div class="r-meta">Age 19 &nbsp;·&nbsp; CA &nbsp;·&nbsp; Missing since 09/22/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+13238905500">LASD Missing Persons Unit (323) 890-5500; Crime Stoppers (800) 222-TIPS<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Gabriel Burk-Fawcett</div>
+    <div class="r-meta">Age 18 &nbsp;·&nbsp; WA &nbsp;·&nbsp; Missing since 09/22/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <div class="call no-link">911; SPD case #26-283674</div>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Ivette Jada Bateman</div>
+    <div class="r-meta">Age 17 &nbsp;·&nbsp; ND &nbsp;·&nbsp; Missing since 09/22/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+17016273617">MHA/TAT Law Enforcement 701-627-3617 or 911<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Lakyerria Green</div>
+    <div class="r-meta">Age 15 &nbsp;·&nbsp; GA &nbsp;·&nbsp; Missing since 09/22/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+17709204916">Investigator Ethan Leese, Douglas County SO: 770-920-4916 / eleese@sheriff.douglas.ga.us / 911<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Alexander Shear</div>
+    <div class="r-meta">Age 24 &nbsp;·&nbsp; WV &nbsp;·&nbsp; Missing since 09/22/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+13043699913">911 or Boone County Sheriff 304-369-9913<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Pauline Jennings</div>
+    <div class="r-meta">Age 70 &nbsp;·&nbsp; FL &nbsp;·&nbsp; Missing since 09/22/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+18508914200">Tallahassee Police 850-891-4200 (case 2026-00151815)<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Shahid Muhammad</div>
+    <div class="r-meta">Age 14 &nbsp;·&nbsp; PA &nbsp;·&nbsp; Missing since 09/22/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+12156863243">Philadelphia PD East Detective Division 215-686-3243<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Leslie Givens</div>
+    <div class="r-meta">Age — &nbsp;·&nbsp; NV &nbsp;·&nbsp; Missing since 09/22/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+17028283111">LVMPD (702) 828-3111, Missing Persons Detail (702) 828-2907, case LLV260900086124<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Ryan Leo Faulkerson</div>
+    <div class="r-meta">Age 17 &nbsp;·&nbsp; CO &nbsp;·&nbsp; Missing since 09/22/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+17194447000">Colorado Springs PD (719) 444-7000; NCMEC 1-800-843-5678<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Amya Sa&#x27;chay Wade</div>
+    <div class="r-meta">Age 16 &nbsp;·&nbsp; MD &nbsp;·&nbsp; Missing since 09/22/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+13013521200">Prince George&#x27;s County PD (301) 352-1200; NCMEC 1-800-843-5678<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Zavier Keith Duncan</div>
+    <div class="r-meta">Age 17 &nbsp;·&nbsp; OH &nbsp;·&nbsp; Missing since 09/22/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+12166235000">Cleveland PD (216) 623-5000; NCMEC 1-800-843-5678<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Amauria Carter</div>
+    <div class="r-meta">Age 15 &nbsp;·&nbsp; WA &nbsp;·&nbsp; Missing since 09/22/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+15095742500">Moxee PD non-emergency (509) 574-2500 or 911, case 26M0859<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Katelyn Smith &amp; Paige Belcher</div>
+    <div class="r-meta">Age 16 &nbsp;·&nbsp; IN &nbsp;·&nbsp; Missing since 09/22/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+18124367905">Evansville PD Juvenile Investigation Unit 812-436-7905<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Silas Scott</div>
+    <div class="r-meta">Age 14 &nbsp;·&nbsp; MA &nbsp;·&nbsp; Missing since 09/22/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+17815952000">Lynn Police Department (MA) (781) 595-2000<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Dashiell Jetton Ferguson</div>
+    <div class="r-meta">Age 15 &nbsp;·&nbsp; AZ &nbsp;·&nbsp; Missing since 09/22/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+15208033550">Cochise County Sheriff&#x27;s Office (AZ), (520) 803-3550; NCMEC 1-800-843-5678<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Jennifer Jaide Riley</div>
+    <div class="r-meta">Age 14 &nbsp;·&nbsp; FL &nbsp;·&nbsp; Missing since 09/22/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+12394771000">Lee County Sheriff&#x27;s Office (FL), (239) 477-1000; NCMEC 1-800-843-5678<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Sharon Kay Joseph</div>
+    <div class="r-meta">Age 76 &nbsp;·&nbsp; AZ &nbsp;·&nbsp; Missing since 09/22/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+16022626151">Phoenix Police Department, Detective Fortuna (602) 262-6151<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Ariana Michelle Santos-Ramos</div>
+    <div class="r-meta">Age 14 &nbsp;·&nbsp; VA &nbsp;·&nbsp; Missing since 09/22/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+17037926500">Prince William County Police Department (703) 792-6500<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Bernard Townes</div>
+    <div class="r-meta">Age 71 &nbsp;·&nbsp; UT &nbsp;·&nbsp; Missing since 09/21/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+18017993000">Salt Lake City PD 801-799-3000 or 911<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Tae&#x27;zyr Geary</div>
+    <div class="r-meta">Age 11 &nbsp;·&nbsp; PA &nbsp;·&nbsp; Missing since 09/21/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+12156863153">Philadelphia PD Northeast Detectives 215-686-3153 / 215-686-3154 or 911<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Konstance R Moni Allen</div>
+    <div class="r-meta">Age 17 &nbsp;·&nbsp; TX &nbsp;·&nbsp; Missing since 09/21/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+14693764500">Kaufman County Constable (469) 376-4500; NCMEC 1-800-843-5678<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Serenity Lynn Williams</div>
+    <div class="r-meta">Age 15 &nbsp;·&nbsp; GA &nbsp;·&nbsp; Missing since 09/21/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <div class="call no-link">East Point Police Department - Call 911 or your local police agency</div>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Brianna Cattleman-Rain</div>
+    <div class="r-meta">Age 14 &nbsp;·&nbsp; AB (Canada) &nbsp;·&nbsp; Missing since 09/21/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+14033284444">Lethbridge Police Service 403-328-4444 (file 26057475)<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Todd Payne</div>
+    <div class="r-meta">Age 50 &nbsp;·&nbsp; IN &nbsp;·&nbsp; Missing since 09/21/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+15138685811">Hamilton, OH PD — Det. Katherine Johnson, (513) 868-5811 ext. 1235; TES case 26-2827<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Kourage Graves-Allison</div>
+    <div class="r-meta">Age 15 &nbsp;·&nbsp; MA &nbsp;·&nbsp; Missing since 09/21/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+16179463080">Massachusetts State Police (MA) (617) 946-3080<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Diane Tah</div>
+    <div class="r-meta">Age 23 &nbsp;·&nbsp; OH &nbsp;·&nbsp; Missing since 09/21/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+12166232715">Cleveland PD 2nd District Det. Demas #1701 (216) 623-2715; non-emergency (216) 621-1234<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Hannah Carter</div>
+    <div class="r-meta">Age 15 &nbsp;·&nbsp; WI &nbsp;·&nbsp; Missing since 09/20/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+14149357222">Milwaukee PD District 2 414-935-7222<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Ni&#x27;Yanna Baker</div>
+    <div class="r-meta">Age 14 &nbsp;·&nbsp; TX &nbsp;·&nbsp; Missing since 09/20/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+19035666600">Smith County Sheriff&#x27;s Office (TX) (903) 566-6600<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Paisley Beachler</div>
+    <div class="r-meta">Age 14 &nbsp;·&nbsp; OR &nbsp;·&nbsp; Missing since 09/20/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+15417767206">Medford PD non-emergency dispatch (541) 776-7206<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Richard Wayne Guy II</div>
+    <div class="r-meta">Age 46 &nbsp;·&nbsp; KS &nbsp;·&nbsp; Missing since 09/20/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+13163219120">El Dorado PD (316) 321-9120; Butler County Dispatch (316) 322-4398; KBI (785) 296-4017<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Jaayden Tavarez</div>
+    <div class="r-meta">Age 18 &nbsp;·&nbsp; NY &nbsp;·&nbsp; Missing since 09/20/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+19146935500">Dobbs Ferry PD (914) 693-5500; NCMEC 1-800-843-5678<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Tierra Williams</div>
+    <div class="r-meta">Age 13 &nbsp;·&nbsp; NV &nbsp;·&nbsp; Missing since 09/20/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+17026339111">North Las Vegas PD (702) 633-9111; NCMEC 1-800-843-5678<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Nicholas Dieter</div>
+    <div class="r-meta">Age 61 &nbsp;·&nbsp; VA &nbsp;·&nbsp; Missing since 09/20/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+18047582779">Middlesex County Sheriff&#x27;s Office 804-758-2779 / 911<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Tityanna Taylor</div>
+    <div class="r-meta">Age 17 &nbsp;·&nbsp; MD &nbsp;·&nbsp; Missing since 09/20/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+14103962359">Baltimore City Police Department (410) 396-2359; NCMEC 1-800-843-5678<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Brooke Chee Miller</div>
+    <div class="r-meta">Age 16 &nbsp;·&nbsp; AZ &nbsp;·&nbsp; Missing since 09/20/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+15208665111">Pinal County Sheriff&#x27;s Office (AZ), (520) 866-5111; NCMEC 1-800-843-5678<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Morgan Renee Fairley</div>
+    <div class="r-meta">Age 17 &nbsp;·&nbsp; FL &nbsp;·&nbsp; Missing since 09/20/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+13527329111">Marion County Sheriff&#x27;s Office (FL), (352) 732-9111; NCMEC 1-800-843-5678<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Natalia Vidal</div>
+    <div class="r-meta">Age 17 &nbsp;·&nbsp; FL &nbsp;·&nbsp; Missing since 09/20/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+15616883400">Palm Beach County Sheriff&#x27;s Office (FL), (561) 688-3400; NCMEC 1-800-843-5678<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Sparrow Kowatch</div>
+    <div class="r-meta">Age 16 &nbsp;·&nbsp; AK &nbsp;·&nbsp; Missing since 09/19/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+19077452131">Alaska State Troopers (907) 745-2131<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Sarah Rayford</div>
+    <div class="r-meta">Age 17 &nbsp;·&nbsp; OH &nbsp;·&nbsp; Missing since 09/19/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+14192558443">Toledo PD (419) 255-8443; NCMEC 1-800-843-5678<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">London M Lopez</div>
+    <div class="r-meta">Age 16 &nbsp;·&nbsp; FL &nbsp;·&nbsp; Missing since 09/19/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+15616883400">Palm Beach County Sheriff&#x27;s Office (FL), (561) 688-3400; NCMEC 1-800-843-5678<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Logan Josiah Crespo</div>
+    <div class="r-meta">Age 17 &nbsp;·&nbsp; AZ &nbsp;·&nbsp; Missing since 09/19/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+16022626151">Phoenix Police Department (AZ), (602) 262-6151; NCMEC 1-800-843-5678<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Skyla Marsh</div>
+    <div class="r-meta">Age 13 &nbsp;·&nbsp; FL &nbsp;·&nbsp; Missing since 09/18/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+12394771850">Lee County Sheriff&#x27;s Office (239) 477-1850; NCMEC 1-800-843-5678<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">John Anderson</div>
+    <div class="r-meta">Age 77 &nbsp;·&nbsp; CA &nbsp;·&nbsp; Missing since 09/18/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+12133859102">LAPD Olympic Division 213-385-9102 or 911<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Jahmir Triggs-Cooper</div>
+    <div class="r-meta">Age 14 &nbsp;·&nbsp; PA &nbsp;·&nbsp; Missing since 09/18/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+12156863013">Philadelphia PD South Detective Division 215-686-3013<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Hanan Tuquib Mardini</div>
+    <div class="r-meta">Age 28 &nbsp;·&nbsp; OR &nbsp;·&nbsp; Missing since 09/18/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+15036182318">Gresham Police Department 503-618-2318 / 503-823-3333<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Gina Christina Piazza</div>
+    <div class="r-meta">Age 27 &nbsp;·&nbsp; OR &nbsp;·&nbsp; Missing since 09/18/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+15416824150">Lane County Sheriff&#x27;s Office 541-682-4150 opt 1 (case 26-4687)<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Dela Mayberry</div>
+    <div class="r-meta">Age 16 &nbsp;·&nbsp; CA &nbsp;·&nbsp; Missing since 09/18/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <div class="call no-link">Sacramento County Sheriff&#x27;s Office / Call 911</div>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Jadeira Erickson</div>
+    <div class="r-meta">Age 17 &nbsp;·&nbsp; MA &nbsp;·&nbsp; Missing since 09/18/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+15088392858">Grafton Police Department (MA) (508) 839-2858<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Sarah Mackenzie Gannon</div>
+    <div class="r-meta">Age 16 &nbsp;·&nbsp; FL &nbsp;·&nbsp; Missing since 09/18/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+17275624200">Clearwater Police Department (FL), (727) 562-4200; NCMEC 1-800-843-5678<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Pernell Manuelito-Dennison</div>
+    <div class="r-meta">Age 34 &nbsp;·&nbsp; NM &nbsp;·&nbsp; Missing since 09/18/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+15057222002">Gallup Police Department (505) 722-2002 or (505) 863-9365<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Derrick David Jr.</div>
+    <div class="r-meta">Age 28 &nbsp;·&nbsp; GA &nbsp;·&nbsp; Missing since 09/17/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+16788540022">CCSO Investigator Chris Stapler 678-854-0022<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Matthew Rottenhoffer</div>
+    <div class="r-meta">Age 6 &nbsp;·&nbsp; VA &nbsp;·&nbsp; Missing since 09/17/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <div class="call no-link">Virginia State Police (CODI Alert)</div>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Gunar Zagars</div>
+    <div class="r-meta">Age 64 &nbsp;·&nbsp; PA &nbsp;·&nbsp; Missing since 09/17/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+12156863093">Philadelphia Police Department, Central Detective Division 215-686-3093 / 215-686-3094<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Akemi Rose Santana</div>
+    <div class="r-meta">Age 12 &nbsp;·&nbsp; NY &nbsp;·&nbsp; Missing since 09/17/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+16466105030">New York City Police Department (NY) (646) 610-5030<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Alexandria Ofelia Nunez</div>
+    <div class="r-meta">Age 16 &nbsp;·&nbsp; CA &nbsp;·&nbsp; Missing since 09/17/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+12099337085">Stockton Unified School District PD (209) 933-7085<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Zariah Nayture Aminah Peterson</div>
+    <div class="r-meta">Age 17 &nbsp;·&nbsp; MN &nbsp;·&nbsp; Missing since 09/17/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+16512911111">Saint Paul Police Department (MN) (651) 291-1111<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Silvana Miranda Musgrave</div>
+    <div class="r-meta">Age 17 &nbsp;·&nbsp; FL &nbsp;·&nbsp; Missing since 09/17/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+17275826200">Pinellas County Sheriff&#x27;s Office (FL), (727) 582-6200; NCMEC 1-800-843-5678<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Serenity Amor Barber</div>
+    <div class="r-meta">Age 17 &nbsp;·&nbsp; IA &nbsp;·&nbsp; Missing since 09/17/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+15633267979">Davenport Police Department (563) 326-7979<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Genesis Daviana Rivera Ruiz</div>
+    <div class="r-meta">Age 14 &nbsp;·&nbsp; VA &nbsp;·&nbsp; Missing since 09/16/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+17033857924">Fairfax City Police Department 703-385-7924<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Fredrick Johnson, Jr.</div>
+    <div class="r-meta">Age 40 &nbsp;·&nbsp; NM &nbsp;·&nbsp; Missing since 09/16/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+15057222002">Metro Dispatch (505) 722-2002 or Gallup Police Department (505) 863-9365<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Summer Rayne Harbison</div>
+    <div class="r-meta">Age 17 &nbsp;·&nbsp; MD &nbsp;·&nbsp; Missing since 09/16/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+13012798000">Montgomery County PD 1-301-279-8000; NCMEC 1-800-843-5678 (NCMC2102291)<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Leo and Katherine Lindeman</div>
+    <div class="r-meta">Age 73 &nbsp;·&nbsp; MO &nbsp;·&nbsp; Missing since 09/16/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+14172234319">McDonald County Sheriff&#x27;s Office 417-223-4319 / Dispatch 417-223-4318<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Alfredo Galarza</div>
+    <div class="r-meta">Age 17 &nbsp;·&nbsp; TX &nbsp;·&nbsp; Missing since 09/16/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+17138843131">Houston Police Department (TX), (713) 884-3131; NCMEC 1-800-843-5678<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Beau&#x27;tee Jackson</div>
+    <div class="r-meta">Age 17 &nbsp;·&nbsp; OH &nbsp;·&nbsp; Missing since 09/16/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+12166211234">Cleveland Police Department (OH), (216) 621-1234; NCMEC 1-800-843-5678<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Eslyn Divall</div>
+    <div class="r-meta">Age 12 &nbsp;·&nbsp; AZ &nbsp;·&nbsp; Missing since 09/15/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+16232224000">Surprise Police Department (623) 222-4000<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Sarah Jones</div>
+    <div class="r-meta">Age 16 &nbsp;·&nbsp; LA &nbsp;·&nbsp; Missing since 09/15/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+19858393434">Washington Parish Sheriff&#x27;s Office (985) 839-3434<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Sebastian Snow</div>
+    <div class="r-meta">Age 30 &nbsp;·&nbsp; MO &nbsp;·&nbsp; Missing since 09/15/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+16607475511">Johnson County Central Dispatch 660-747-5511<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Story Bohlare</div>
+    <div class="r-meta">Age 16 &nbsp;·&nbsp; AK &nbsp;·&nbsp; Missing since 09/15/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+19077452131">Alaska State Troopers (907) 745-2131<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Randall Michael White</div>
+    <div class="r-meta">Age 54 &nbsp;·&nbsp; CA &nbsp;·&nbsp; Missing since 09/15/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+13238905500">LASD Missing Persons Detail 323-890-5500; Crime Stoppers (800) 222-TIPS<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Leanna Marie Carter</div>
+    <div class="r-meta">Age 15 &nbsp;·&nbsp; OH &nbsp;·&nbsp; Missing since 09/15/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+16146454545">Columbus Police Department (OH), (614) 645-4545; NCMEC 1-800-843-5678<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Noah Immanuel Varela</div>
+    <div class="r-meta">Age 13 &nbsp;·&nbsp; MD &nbsp;·&nbsp; Missing since 09/14/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+14106121717">Harford County Sheriff&#x27;s Office, Southern Precinct 410-612-1717<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Tre&#x27;Vaughn Williams</div>
+    <div class="r-meta">Age 14 &nbsp;·&nbsp; AZ &nbsp;·&nbsp; Missing since 09/14/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+16022626151">Phoenix Police Department 602-262-6151<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Gustavo Angel Sanchez</div>
+    <div class="r-meta">Age 17 &nbsp;·&nbsp; TX &nbsp;·&nbsp; Missing since 09/14/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+17138843131">Houston Police Department (713) 884-3131<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Nysherra Ann Sneed</div>
+    <div class="r-meta">Age 18 &nbsp;·&nbsp; MD &nbsp;·&nbsp; Missing since 09/14/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+14432632220">Baltimore PD (443) 263-2220; NCMEC 1-800-843-5678<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Neveah Al-Shami</div>
+    <div class="r-meta">Age 17 &nbsp;·&nbsp; OH &nbsp;·&nbsp; Missing since 09/14/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+12166211234">Cleveland Police Department (OH), (216) 621-1234; NCMEC 1-800-843-5678<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Bryanna Tania Williams-McDonald</div>
+    <div class="r-meta">Age 15 &nbsp;·&nbsp; AZ &nbsp;·&nbsp; Missing since 09/14/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+16022626151">Phoenix Police Department (AZ), (602) 262-6151; NCMEC 1-800-843-5678<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Isaiah Chavez</div>
+    <div class="r-meta">Age 16 &nbsp;·&nbsp; AZ &nbsp;·&nbsp; Missing since 09/13/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+16022626151">Phoenix Police Department 602-262-6151<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Kiera Tallant</div>
+    <div class="r-meta">Age 17 &nbsp;·&nbsp; AZ &nbsp;·&nbsp; Missing since 09/13/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+16022626151">Phoenix Police Department 602-262-6151<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Weston Tyson</div>
+    <div class="r-meta">Age 17 &nbsp;·&nbsp; UT &nbsp;·&nbsp; Missing since 09/13/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+18018404000">South Salt Lake Police 801-840-4000 (case LK2026-27055)<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Jasil Johnson</div>
+    <div class="r-meta">Age 15 &nbsp;·&nbsp; PA &nbsp;·&nbsp; Missing since 09/13/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+12156863243">Philadelphia PD East Detective Division 215-686-3243<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Aileen Uriostegui-Salgado</div>
+    <div class="r-meta">Age 15 &nbsp;·&nbsp; CA &nbsp;·&nbsp; Missing since 09/13/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+12099378377">Stockton Police Department (209) 937-8377<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Christy Annette Piim</div>
+    <div class="r-meta">Age 13 &nbsp;·&nbsp; MD &nbsp;·&nbsp; Missing since 09/12/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <div class="call no-link">—</div>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Kreg Joseph Walters</div>
+    <div class="r-meta">Age 38 &nbsp;·&nbsp; IA &nbsp;·&nbsp; Missing since 09/12/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+13198246933">Grundy County Sheriff&#x27;s Office (319) 824-6933<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Antione Jones</div>
+    <div class="r-meta">Age 15 &nbsp;·&nbsp; IL &nbsp;·&nbsp; Missing since 09/11/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+13127478274">CPD Area Two SVU 312-747-8274 or 911<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Cecia Mejia</div>
+    <div class="r-meta">Age 14 &nbsp;·&nbsp; AR &nbsp;·&nbsp; Missing since 09/11/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+15017781171">Benton Police Department 501.778.1171<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Jeremiah Alexander</div>
+    <div class="r-meta">Age 22 &nbsp;·&nbsp; TN &nbsp;·&nbsp; Missing since 09/11/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+19016364479">Memphis PD Missing Persons Bureau (901) 636-4479<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Ethen Hamed</div>
+    <div class="r-meta">Age 16 &nbsp;·&nbsp; MI &nbsp;·&nbsp; Missing since 09/11/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+13135965440">Detroit PD 4th Precinct 313-596-5440<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Katrice McDougal</div>
+    <div class="r-meta">Age 17 &nbsp;·&nbsp; VA &nbsp;·&nbsp; Missing since 09/11/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+17573938536">Portsmouth PD Special Victims Unit 757-393-8536<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Laure Bloom</div>
+    <div class="r-meta">Age 12 &nbsp;·&nbsp; TX &nbsp;·&nbsp; Missing since 09/10/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <div class="call no-link">—</div>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Homayoun Mojadidi</div>
+    <div class="r-meta">Age 61 &nbsp;·&nbsp; CA &nbsp;·&nbsp; Missing since 09/10/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <div class="call no-link">—</div>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Mopelola Lydia Omonubi</div>
+    <div class="r-meta">Age 59 &nbsp;·&nbsp; NJ &nbsp;·&nbsp; Missing since 09/10/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+19737336000">Newark Police Department (973) 733-6000<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Eliannys Nicoll Bolivar Calzadilla</div>
+    <div class="r-meta">Age 15 &nbsp;·&nbsp; MD &nbsp;·&nbsp; Missing since 09/09/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+12405445700">Bowie Police Department (MD) (240) 544-5700<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Mustapha &quot;Ben&quot; Benhmida</div>
+    <div class="r-meta">Age 68 &nbsp;·&nbsp; CO &nbsp;·&nbsp; Missing since 09/09/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+13032372220">Wheat Ridge Police Department (303) 237-2220<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Markhya Hudson</div>
+    <div class="r-meta">Age 25 &nbsp;·&nbsp; AL &nbsp;·&nbsp; Missing since 09/09/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <div class="call no-link">—</div>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Vontane Wheat</div>
+    <div class="r-meta">Age 29 &nbsp;·&nbsp; NY &nbsp;·&nbsp; Missing since 09/09/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <div class="call no-link">—</div>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Shantell London Robinson</div>
+    <div class="r-meta">Age 15 &nbsp;·&nbsp; PA &nbsp;·&nbsp; Missing since 09/09/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+12156868477">Philadelphia Police Department (215) 686-8477<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Diana Rayn Mattingley</div>
+    <div class="r-meta">Age 17 &nbsp;·&nbsp; MN &nbsp;·&nbsp; Missing since 09/09/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+17634271212">Fridley Police Department (MN) (763) 427-1212<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Rowan Woolard</div>
+    <div class="r-meta">Age 25 &nbsp;·&nbsp; NV &nbsp;·&nbsp; Missing since 09/09/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+17028283111">Las Vegas Metropolitan PD (702) 828-3111; Missing Persons Detail (702) 828-2907<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Thy&#x27;Ione Small</div>
+    <div class="r-meta">Age 17 &nbsp;·&nbsp; MD &nbsp;·&nbsp; Missing since 09/08/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <div class="call no-link">—</div>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Scarleth Acuna</div>
+    <div class="r-meta">Age 13 &nbsp;·&nbsp; CA &nbsp;·&nbsp; Missing since 09/07/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+18772755273">Los Angeles Police Department (877) 275-5273<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Valeria Ayvar</div>
+    <div class="r-meta">Age 17 &nbsp;·&nbsp; WI &nbsp;·&nbsp; Missing since 09/07/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <div class="call no-link">—</div>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">John Campos</div>
+    <div class="r-meta">Age 77 &nbsp;·&nbsp; CA &nbsp;·&nbsp; Missing since 09/06/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <div class="call no-link">—</div>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Valeria Barragan</div>
+    <div class="r-meta">Age 16 &nbsp;·&nbsp; CA &nbsp;·&nbsp; Missing since 09/06/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+17077453411">BPD Detective Frank (707) 745-3411, case 26-1243<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Thomas Goodwin</div>
+    <div class="r-meta">Age 54 &nbsp;·&nbsp; WA &nbsp;·&nbsp; Missing since 09/05/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <div class="call no-link">—</div>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Zadeyah Monica Jackson</div>
+    <div class="r-meta">Age 9 &nbsp;·&nbsp; TX &nbsp;·&nbsp; Missing since 09/05/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+12103356000">Bexar County Sheriff&#x27;s Office (210) 335-6000<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Asaad Jackson</div>
+    <div class="r-meta">Age 7 &nbsp;·&nbsp; TX &nbsp;·&nbsp; Missing since 09/05/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+12103356000">Bexar County Sheriff&#x27;s Office (210) 335-6000<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Eliseth Villalobos</div>
+    <div class="r-meta">Age 40 &nbsp;·&nbsp; NV &nbsp;·&nbsp; Missing since 09/05/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+17023466911">Mesquite Police Department (702) 346-6911<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Asjionna Marie Mauldin</div>
+    <div class="r-meta">Age 15 &nbsp;·&nbsp; VA &nbsp;·&nbsp; Missing since 09/04/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <div class="call no-link">—</div>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Anthony Carey</div>
+    <div class="r-meta">Age 29 &nbsp;·&nbsp; — &nbsp;·&nbsp; Missing since 09/04/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+18018152066">Jen Carey (family) 801-815-2066 — no police agency listed<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Azaria Higginbotham</div>
+    <div class="r-meta">Age 16 &nbsp;·&nbsp; CA &nbsp;·&nbsp; Missing since 09/04/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <div class="call no-link">Sacramento County Sheriff&#x27;s Office / 911</div>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Jacqui Rose Lauzon</div>
+    <div class="r-meta">Age 17 &nbsp;·&nbsp; MA &nbsp;·&nbsp; Missing since 09/03/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <div class="call no-link">911 (NCMEC)</div>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Harlem Henton</div>
+    <div class="r-meta">Age 15 &nbsp;·&nbsp; CA &nbsp;·&nbsp; Missing since 09/03/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+12094684400">San Joaquin County Sheriff&#x27;s Office (209) 468-4400<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Jazlynn Isabelle Torres Gomez</div>
+    <div class="r-meta">Age 15 &nbsp;·&nbsp; NV &nbsp;·&nbsp; Missing since 09/02/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+17028283745">Las Vegas Metropolitan Police Department (702) 828-3745<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Abraham Rivera Lopez</div>
+    <div class="r-meta">Age 16 &nbsp;·&nbsp; CT &nbsp;·&nbsp; Missing since 09/02/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+18607574000">Hartford Police Department (860) 757-4000<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Arabella Autumn Campos</div>
+    <div class="r-meta">Age 16 &nbsp;·&nbsp; TX &nbsp;·&nbsp; Missing since 09/02/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+18306203400">Comal County Sheriff&#x27;s Office (830) 620-3400<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Robert Hunter</div>
+    <div class="r-meta">Age 14 &nbsp;·&nbsp; CA &nbsp;·&nbsp; Missing since 09/02/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+18772755273">Los Angeles Police Department (CA); contact per NCMEC poster 1-877-275-5273 (NCMEC)<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Zayah Milo</div>
+    <div class="r-meta">Age 13 &nbsp;·&nbsp; KS &nbsp;·&nbsp; Missing since 09/02/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+13162684111">Wichita Police Department (KS) (316) 268-4111<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">John Jones</div>
+    <div class="r-meta">Age 85 &nbsp;·&nbsp; CA &nbsp;·&nbsp; Missing since 09/01/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <div class="call no-link">Call 911 (CHP Silver Alert / San Mateo County Sheriff)</div>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Sandra Dunn</div>
+    <div class="r-meta">Age 58 &nbsp;·&nbsp; DE &nbsp;·&nbsp; Missing since 09/01/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+13026545151">Wilmington PD 302-654-5151<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Preston B Goldman</div>
+    <div class="r-meta">Age 18 &nbsp;·&nbsp; IL &nbsp;·&nbsp; Missing since 09/01/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+16188776111">Granite City Police Department (618) 877-6111<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Paige Harmonie Wollman</div>
+    <div class="r-meta">Age 15 &nbsp;·&nbsp; MN &nbsp;·&nbsp; Missing since 09/01/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+13202352244">Willmar Police Department (MN) (320) 235-2244<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Percilla Meinhardt</div>
+    <div class="r-meta">Age 17 &nbsp;·&nbsp; AZ &nbsp;·&nbsp; Missing since 08/31/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+16022626151">Phoenix Police Department 602-262-6151<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Honestie Durbin</div>
+    <div class="r-meta">Age 36 &nbsp;·&nbsp; KS &nbsp;·&nbsp; Missing since 08/31/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+19184235858">Pittsburg County Sheriff&#x27;s Office (918) 423-5858 or 911<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Skyler Vasquez</div>
+    <div class="r-meta">Age 17 &nbsp;·&nbsp; CA &nbsp;·&nbsp; Missing since 08/30/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+15596844290">Tulare Police Department (559) 684-4290<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Gabriella Werner</div>
+    <div class="r-meta">Age 14 &nbsp;·&nbsp; NY &nbsp;·&nbsp; Missing since 08/24/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+13157247111">New Hartford Police Department (315) 724-7111<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Aaliah Domanique Johnson</div>
+    <div class="r-meta">Age 17 &nbsp;·&nbsp; AZ &nbsp;·&nbsp; Missing since 08/23/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+16022626151">Phoenix Police Department (602) 262-6151<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Jelisa Martha Saldana</div>
+    <div class="r-meta">Age 14 &nbsp;·&nbsp; TX &nbsp;·&nbsp; Missing since 08/23/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+13618862600">Corpus Christi Police Department (361) 886-2600<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Rory Ricocage Wilkinson</div>
+    <div class="r-meta">Age 35 &nbsp;·&nbsp; IA &nbsp;·&nbsp; Missing since 08/22/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+13192865491">Cedar Rapids Police Department (319) 286-5491<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Nicholas Jackson</div>
+    <div class="r-meta">Age 36 &nbsp;·&nbsp; ND &nbsp;·&nbsp; Missing since 08/19/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+17014517660">Fargo PD / Red River Regional Dispatch 701.451.7660<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Ashley Haider</div>
+    <div class="r-meta">Age 37 &nbsp;·&nbsp; CO &nbsp;·&nbsp; Missing since 08/17/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+17209136653">Denver PD 720-913-6653 or 720-913-7867<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Taisha Cano</div>
+    <div class="r-meta">Age 42 &nbsp;·&nbsp; FL &nbsp;·&nbsp; Missing since 08/15/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+17278478102">Pasco Sheriff&#x27;s Office Non-Emergency (727) 847-8102 opt. 7<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Janay T Cunningham</div>
+    <div class="r-meta">Age 16 &nbsp;·&nbsp; WI &nbsp;·&nbsp; Missing since 08/14/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+14149334444">Milwaukee Police Department (WI) (414) 933-4444<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Jahzara Gandy</div>
+    <div class="r-meta">Age 15 &nbsp;·&nbsp; CA &nbsp;·&nbsp; Missing since 08/10/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+15624356711">Long Beach Police Department (562) 435-6711<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Diana Galvez Ortega</div>
+    <div class="r-meta">Age 14 &nbsp;·&nbsp; CA &nbsp;·&nbsp; Missing since 08/04/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <div class="call no-link">Monterey County Sheriff&#x27;s Office — call 911</div>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Tyonna Sanders</div>
+    <div class="r-meta">Age 14 &nbsp;·&nbsp; DC &nbsp;·&nbsp; Missing since 08/03/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+12025766768">DC MPD Youth and Family Engagement Division (202) 576-6768<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Raymond Allen Ashby</div>
+    <div class="r-meta">Age 55 &nbsp;·&nbsp; VA &nbsp;·&nbsp; Missing since 08/01/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+15402455333">Augusta County Sheriff&#x27;s Office (540) 245-5333<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Laura Faith Johnson</div>
+    <div class="r-meta">Age 15 &nbsp;·&nbsp; CA &nbsp;·&nbsp; Missing since 07/27/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+15625705721">Long Beach Police Department (562) 570-5721<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">O&#x27;Bonjai Parham-Skaggs</div>
+    <div class="r-meta">Age 23 &nbsp;·&nbsp; CA &nbsp;·&nbsp; Missing since 07/19/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+12099377911">Stockton PD Det. J. Bauer (209) 937-7911, Missing Persons Unit (209) 937-8323, case 26-20262<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Blake Denzell Peoples</div>
+    <div class="r-meta">Age 15 &nbsp;·&nbsp; TN &nbsp;·&nbsp; Missing since 07/16/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+14236221725">East Ridge Police Department (423) 622-1725<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Dina Michelle Spencer</div>
+    <div class="r-meta">Age — &nbsp;·&nbsp; GA &nbsp;·&nbsp; Missing since 07/15/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+17707204883">Canton PD Det. Sgt. Michael Crowe 770-720-4883 or 911 (case #202603293)<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Lupita Salas</div>
+    <div class="r-meta">Age 15 &nbsp;·&nbsp; IN &nbsp;·&nbsp; Missing since 07/10/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+18129446411">New Albany Police Department 812-944-6411<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Travis Riordan</div>
+    <div class="r-meta">Age 47 &nbsp;·&nbsp; TN &nbsp;·&nbsp; Missing since 07/07/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+18652152243">Knox County Sheriff&#x27;s Office (865) 215-2243 or 911<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">London Dior Iraji-Pearson</div>
+    <div class="r-meta">Age 4 &nbsp;·&nbsp; CO &nbsp;·&nbsp; Missing since 06/23/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+17209136010">Denver Police Department (720) 913-6010 / BAMFI 877-97-BAMFI<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Janet Sue Burgess</div>
+    <div class="r-meta">Age 17 &nbsp;·&nbsp; OH &nbsp;·&nbsp; Missing since 06/07/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+19373332677">Dayton Police Department (937) 333-2677<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Elijah Bland</div>
+    <div class="r-meta">Age 17 &nbsp;·&nbsp; NC &nbsp;·&nbsp; Missing since 05/22/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+19108755111">Hoke County Sheriff&#x27;s Office (910) 875-5111<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Lindsey Watts</div>
+    <div class="r-meta">Age 35 &nbsp;·&nbsp; MO &nbsp;·&nbsp; Missing since 05/19/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+16603972186">Knox County Sheriff&#x27;s Dept (660) 397-2186, ext. 1<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Ray Brannon</div>
+    <div class="r-meta">Age 14 &nbsp;·&nbsp; PA &nbsp;·&nbsp; Missing since 05/08/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+14122552621">Pittsburgh Police Department (PA) (412) 255-2621<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Hubiyo Hussein</div>
+    <div class="r-meta">Age 20 &nbsp;·&nbsp; MN &nbsp;·&nbsp; Missing since 04/02/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+16123482345">Minneapolis Police Department (612) 348-2345 / 911<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Chris Acosta</div>
+    <div class="r-meta">Age 14 &nbsp;·&nbsp; AZ &nbsp;·&nbsp; Missing since 01/16/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+16022626151">Phoenix Police Department (602) 262-6151<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Hugo Ledesma</div>
+    <div class="r-meta">Age 32 &nbsp;·&nbsp; TX &nbsp;·&nbsp; Missing since 10/21/2025</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+17138843131">Houston Police Department (713) 884-3131<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Jayne Jeffries</div>
+    <div class="r-meta">Age 68 &nbsp;·&nbsp; PA &nbsp;·&nbsp; Missing since 2025-10</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+12156863353">Philadelphia PD Northwest Detective Division 215-686-3353<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Joshua Roberson</div>
+    <div class="r-meta">Age 38 &nbsp;·&nbsp; WA &nbsp;·&nbsp; Missing since 09/05/2025</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+12066255011">Seattle PD 206-625-5011 / WSP MUPU 1-800-543-5678<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Debra Dawn Moore</div>
+    <div class="r-meta">Age 15 &nbsp;·&nbsp; TX &nbsp;·&nbsp; Missing since 07/20/2025</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+17137555300">Harris County Sheriff&#x27;s Office (713) 755-5300<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Stefanie Damron</div>
+    <div class="r-meta">Age 15 &nbsp;·&nbsp; ME &nbsp;·&nbsp; Missing since 09/24/2024</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+18002255324">FBI 1-800-CALL-FBI (1-800-225-5324); tips.fbi.gov<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Benita Tamake Woody</div>
+    <div class="r-meta">Age 48 &nbsp;·&nbsp; TX &nbsp;·&nbsp; Missing since 08/05/2020</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+19725472700">McKinney Police Department (972) 547-2700<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Dulce Maria Alavez</div>
+    <div class="r-meta">Age — &nbsp;·&nbsp; NJ &nbsp;·&nbsp; Missing since 09/16/2019</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <div class="call no-link">FBI / Bridgeton PD (no phone on flyer)</div>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Abby Lynn Patterson</div>
+    <div class="r-meta">Age 29 &nbsp;·&nbsp; NC &nbsp;·&nbsp; Missing since 09/05/2017</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+17046726100">FBI Charlotte (704) 672-6100 / Lumberton PD (910) 671-3845<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row active">
+  <div class="r-main">
+    <div class="r-name">Rudy Plenty Hawk</div>
+    <div class="r-meta">Age 63 &nbsp;·&nbsp; MT &nbsp;·&nbsp; Missing since 01/08/2017</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill active">ACTIVE</span>
+    <a class="call" href="tel:+18335602065">BIA Missing &amp; Murdered Unit 1-833-560-2065<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+
+<h2>ON HOLD <small>Delayed — do not post until rechecked</small></h2>
+<article class="row hold">
+  <div class="r-main">
+    <div class="r-name">Alexis Lacy</div>
+    <div class="r-meta">Age 13 &nbsp;·&nbsp; DE &nbsp;·&nbsp; Missing since 09/25/2026</div>
+    <div class="r-note">No flyer available - user declined to provide (photo-less: tracker only, do not post)</div>
+  </div>
+  <div class="r-side">
+    <span class="pill hold">ON HOLD</span>
+    <a class="call" href="tel:+13028565850">Delaware State Police Troop 4 - (302) 856-5850 / DE Crime Stoppers 1-800-847-3333<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row hold">
+  <div class="r-main">
+    <div class="r-name">Andrew Appugliese</div>
+    <div class="r-meta">Age 66 &nbsp;·&nbsp; OH &nbsp;·&nbsp; Missing since 09/11/2026</div>
+    <div class="r-note">STILL HOLD 2026-09-26 12:16 sweep: 9/24 Beacon Journal cites Ohio AG Missing Persons Unit - news-only; Ohio AG All-Missing-Persons page blocked by bot protection; no live Boardman PD post.</div>
+  </div>
+  <div class="r-side">
+    <span class="pill hold">ON HOLD</span>
+    <a class="call" href="tel:+13307264144">Boardman PD (330) 726-4144 or 911<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row hold">
+  <div class="r-main">
+    <div class="r-name">Annalea Napier</div>
+    <div class="r-meta">Age 16 &nbsp;·&nbsp; AR &nbsp;·&nbsp; Missing since 09/19/2026</div>
+    <div class="r-note">STILL HOLD 2026-09-26 12:16 sweep: mother&#x27;s FB post (Woof World, ~2 days old) says still missing from Van Buren since 9/19, tips to Sgt Ardemagni — family-posted only; flip candidate if official post/NCMEC appears.</div>
+  </div>
+  <div class="r-side">
+    <span class="pill hold">ON HOLD</span>
+    <a class="call" href="tel:+14794715080">Sgt Kylie Ardemagni 479-471-5080<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row hold">
+  <div class="r-main">
+    <div class="r-name">Asia Washington</div>
+    <div class="r-meta">Age 27 &nbsp;·&nbsp; NC &nbsp;·&nbsp; Missing since 09/27/2026</div>
+    <div class="r-note">verify agency record</div>
+  </div>
+  <div class="r-side">
+    <span class="pill hold">ON HOLD</span>
+    <div class="call no-link">Not confirmed — no agency record</div>
+  </div>
+</article>
+<article class="row hold">
+  <div class="r-main">
+    <div class="r-name">Breanna Lockwood</div>
+    <div class="r-meta">Age 16 &nbsp;·&nbsp; ND &nbsp;·&nbsp; Missing since 07/18/2026</div>
+    <div class="r-note">STILL HOLD 2026-09-26 12:16 sweep: no Fargo PD/ND clearinghouse record naming her; no NCMEC poster.</div>
+  </div>
+  <div class="r-side">
+    <span class="pill hold">ON HOLD</span>
+    <a class="call" href="tel:+17014517660">Red River Regional Dispatch 701-451-7660; tips text FARGOPD to 847411<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row hold">
+  <div class="r-main">
+    <div class="r-name">Cecil Bennett Wright</div>
+    <div class="r-meta">Age 17 &nbsp;·&nbsp; PA &nbsp;·&nbsp; Missing since 09/17/2026</div>
+    <div class="r-note">post</div>
+  </div>
+  <div class="r-side">
+    <span class="pill hold">ON HOLD</span>
+    <a class="call" href="tel:+12156868686">Philadelphia Police Department (215) 686-8686<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row hold">
+  <div class="r-main">
+    <div class="r-name">Daniel Turk</div>
+    <div class="r-meta">Age 30 &nbsp;·&nbsp; DE &nbsp;·&nbsp; Missing since 09/22/2026</div>
+    <div class="r-note">DELAWARE GOLD ALERT confirmed — use Gold styling when photo found; awaiting genuine official photo</div>
+  </div>
+  <div class="r-side">
+    <span class="pill hold">ON HOLD</span>
+    <a class="call" href="tel:+13026335000">DSP Troop 6 (302) 633-5000; Crime Stoppers 1-800-847-3333<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row hold">
+  <div class="r-main">
+    <div class="r-name">Darion Jamal Dinkins</div>
+    <div class="r-meta">Age 13 &nbsp;·&nbsp; VA &nbsp;·&nbsp; Missing since 09/21/2026</div>
+    <div class="r-note">STILL HOLD 2026-09-26 12:16 sweep: no Roanoke PD, VSP CODI, or NCMEC record; only aggregators.</div>
+  </div>
+  <div class="r-side">
+    <span class="pill hold">ON HOLD</span>
+    <a class="call" href="tel:+15408532211">Roanoke Police Department 540-853-2211<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row hold">
+  <div class="r-main">
+    <div class="r-name">Dennis Hestand</div>
+    <div class="r-meta">Age — &nbsp;·&nbsp; MO &nbsp;·&nbsp; Missing since 09/15/2026</div>
+    <div class="r-note">HOLD 2026-09-27: family poster only, no SLMPD/MSHP/NamUs/AWARE record found. Recheck for official confirmation before posting.</div>
+  </div>
+  <div class="r-side">
+    <span class="pill hold">ON HOLD</span>
+    <a class="call" href="tel:+13175178527">Sharon Hestand (family) 317-517-8527 — UNVERIFIED, do not post<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row hold">
+  <div class="r-main">
+    <div class="r-name">Drew Shankles</div>
+    <div class="r-meta">Age 51 &nbsp;·&nbsp; AR &nbsp;·&nbsp; Missing since 09/18/2026</div>
+    <div class="r-note">STILL HOLD 2026-09-26 12:16 sweep: no GCSO or AR authority record; only 2017 arrest-history pages + unrelated TikTok.</div>
+  </div>
+  <div class="r-side">
+    <span class="pill hold">ON HOLD</span>
+    <a class="call" href="tel:+15016223660">Garland County Sheriff&#x27;s Office 501-622-3660<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row hold">
+  <div class="r-main">
+    <div class="r-name">Gracie Cho</div>
+    <div class="r-meta">Age 66 &nbsp;·&nbsp; OK &nbsp;·&nbsp; Missing since 09/22/2026</div>
+    <div class="r-note">STILL HOLD 2026-09-26 12:16 sweep: News9 Silver Alert story still live (Shawnee, 9/22); no OHP-hosted listing — closest to flip, needs official OHP listing.</div>
+  </div>
+  <div class="r-side">
+    <span class="pill hold">ON HOLD</span>
+    <div class="call no-link">911 (OHP Silver Alert)</div>
+  </div>
+</article>
+<article class="row hold">
+  <div class="r-main">
+    <div class="r-name">James Roger Carol</div>
+    <div class="r-meta">Age 77 &nbsp;·&nbsp; CA &nbsp;·&nbsp; Missing since 07/13/2026</div>
+    <div class="r-note">STILL HOLD 2026-09-26 12:16 sweep: no current SCSO or CA DOJ record; Siskiyou ArcGIS hub still JS-gated.</div>
+  </div>
+  <div class="r-side">
+    <span class="pill hold">ON HOLD</span>
+    <a class="call" href="tel:+15308412900">Siskiyou County Sheriff (530) 841-2900<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row hold">
+  <div class="r-main">
+    <div class="r-name">Jordan Ulak</div>
+    <div class="r-meta">Age 16 &nbsp;·&nbsp; AK &nbsp;·&nbsp; Missing since 09/24/2026</div>
+    <div class="r-note">STILL HOLD 2026-09-26 12:16 sweep: no APD bulletin (APD Missing news 0 hits); no NCMEC AK listing (11 records, 0 hits).</div>
+  </div>
+  <div class="r-side">
+    <span class="pill hold">ON HOLD</span>
+    <div class="call no-link">APD case #26-0025351 (unverified)</div>
+  </div>
+</article>
+<article class="row hold">
+  <div class="r-main">
+    <div class="r-name">Kaiden Curley</div>
+    <div class="r-meta">Age 16 &nbsp;·&nbsp; FL &nbsp;·&nbsp; Missing since 09/20/2026</div>
+    <div class="r-note">STILL HOLD 2026-09-26 12:16 sweep: no Sept 2026 PSLPD record; no NCMEC poster (site query zero); only stale Nov 2025 article.</div>
+  </div>
+  <div class="r-side">
+    <span class="pill hold">ON HOLD</span>
+    <a class="call" href="tel:+17728715037">Port St. Lucie PD Det. H. Nieves (772) 871-5037<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row hold">
+  <div class="r-main">
+    <div class="r-name">Kashten Jackson</div>
+    <div class="r-meta">Age 8 &nbsp;·&nbsp; GA &nbsp;·&nbsp; Missing since 09/24/2026</div>
+    
+  </div>
+  <div class="r-side">
+    <span class="pill hold">ON HOLD</span>
+    <a class="call" href="tel:+12294312100">Albany Police Department (229) 431-2100<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row hold">
+  <div class="r-main">
+    <div class="r-name">Kioni Oman</div>
+    <div class="r-meta">Age 16 &nbsp;·&nbsp; WA &nbsp;·&nbsp; Missing since 09/22/2026</div>
+    <div class="r-note">Reconfirmed ACTIVE 2026-09-25: WSP Missing Indigenous Person Advisory (requested by Grant County SO 9/23) live; last seen 9/17 ~9:30 PM near Ephrata WA. Photo watchlist — official WSP MIPA flyer exists, no genuine photo obtainable.</div>
+  </div>
+  <div class="r-side">
+    <span class="pill hold">ON HOLD</span>
+    <div class="call no-link">911 (Grant County Sheriff&#x27;s Office / WA State Patrol)</div>
+  </div>
+</article>
+<article class="row hold">
+  <div class="r-main">
+    <div class="r-name">Lacy Bunch</div>
+    <div class="r-meta">Age 72 &nbsp;·&nbsp; NC &nbsp;·&nbsp; Missing since 09/26/2026</div>
+    <div class="r-note">PHOTO PENDING (article image of unconfirmed origin); Silver Alert issued 2026-09-26 by NC Center for Missing Persons — fresh in-window alert, new incident</div>
+  </div>
+  <div class="r-side">
+    <span class="pill hold">ON HOLD</span>
+    <a class="call" href="tel:+12525838201">Halifax County Sheriff&#x27;s Office 252-583-8201 / 911 / Crimestoppers 252-583-4444<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row hold">
+  <div class="r-main">
+    <div class="r-name">Luis Larrauri-Nunez</div>
+    <div class="r-meta">Age 71 &nbsp;·&nbsp; WA &nbsp;·&nbsp; Missing since 09/25/2026</div>
+    <div class="r-note">Official Renton PD flyer; post</div>
+  </div>
+  <div class="r-side">
+    <span class="pill hold">ON HOLD</span>
+    <div class="call no-link">Call 911 / Renton PD case 26-7421</div>
+  </div>
+</article>
+<article class="row hold">
+  <div class="r-main">
+    <div class="r-name">Makai Mueller</div>
+    <div class="r-meta">Age 17 &nbsp;·&nbsp; ND &nbsp;·&nbsp; Missing since 09/23/2026</div>
+    <div class="r-note">Awaiting genuine official photo; no flyer until found</div>
+  </div>
+  <div class="r-side">
+    <span class="pill hold">ON HOLD</span>
+    <div class="call no-link">Mandan Police Department</div>
+  </div>
+</article>
+<article class="row hold">
+  <div class="r-main">
+    <div class="r-name">Maria Loera</div>
+    <div class="r-meta">Age 69 &nbsp;·&nbsp; IL &nbsp;·&nbsp; Missing since 09/17/2026</div>
+    <div class="r-note">STILL HOLD 2026-09-26 12:16 sweep: no Blue Island PD or IL clearinghouse record; only people-search aggregators.</div>
+  </div>
+  <div class="r-side">
+    <span class="pill hold">ON HOLD</span>
+    <a class="call" href="tel:+17083851313">Blue Island Police 708-385-1313<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row hold">
+  <div class="r-main">
+    <div class="r-name">Melissa Black</div>
+    <div class="r-meta">Age 16 &nbsp;·&nbsp; OK &nbsp;·&nbsp; Missing since 09/09/2026</div>
+    <div class="r-note">STILL HOLD 2026-09-26 12:16 sweep: News9 still live (Ada, Sept 9, diabetic); no OHP-hosted advisory.</div>
+  </div>
+  <div class="r-side">
+    <span class="pill hold">ON HOLD</span>
+    <div class="call no-link">Call 9-1-1 (OHP Endangered Missing Advisory)</div>
+  </div>
+</article>
+<article class="row hold">
+  <div class="r-main">
+    <div class="r-name">Michael Joseph Long aka Joey Long</div>
+    <div class="r-meta">Age unknown &nbsp;·&nbsp; AL &nbsp;·&nbsp; Missing since 2026-08</div>
+    <div class="r-note">STILL HOLD 2026-09-26 12:16 sweep: two targeted searches, zero relevant results; still no Stevenson PD, NCMEC, or any news record.</div>
+  </div>
+  <div class="r-side">
+    <span class="pill hold">ON HOLD</span>
+    <a class="call" href="tel:+14234979633">Stevenson Police Department (report filed 2026-09-24, unconfirmed); family 423-497-9633<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row hold">
+  <div class="r-main">
+    <div class="r-name">Nathan Demello</div>
+    <div class="r-meta">Age 15 &nbsp;·&nbsp; WY &nbsp;·&nbsp; Missing since 09/25/2026</div>
+    <div class="r-note">STILL HOLD 2026-09-26 12:16 sweep: no NCMEC WY listing (5 records, 0 hits); no Wyoming DCI entry; no Cheyenne PD alert.</div>
+  </div>
+  <div class="r-side">
+    <span class="pill hold">ON HOLD</span>
+    <a class="call" href="tel:+13076576525">Cheyenne PD dispatch (307) 657-6525 (per advocacy post, unverified)<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row hold">
+  <div class="r-main">
+    <div class="r-name">Nickenzie Provost</div>
+    <div class="r-meta">Age 11 &nbsp;·&nbsp; LA &nbsp;·&nbsp; Missing since 09/24/2026</div>
+    <div class="r-note">flyer on hold — user discontinued photo requests 2026-09-24</div>
+  </div>
+  <div class="r-side">
+    <span class="pill hold">ON HOLD</span>
+    <a class="call" href="tel:+13184244100">Bossier Crime Stoppers (318) 424-4100<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row hold">
+  <div class="r-main">
+    <div class="r-name">Rejanae Cuttino</div>
+    <div class="r-meta">Age 16 &nbsp;·&nbsp; SC &nbsp;·&nbsp; Missing since 09/18/2026</div>
+    <div class="r-note">STILL HOLD 2026-09-26 12:16 sweep: no Georgetown County SO or NCMEC record; NCMEC SC list (9/24 mirror) lacks her; only Aug 2024 archived news (different event).</div>
+  </div>
+  <div class="r-side">
+    <span class="pill hold">ON HOLD</span>
+    <div class="call no-link">Georgetown County Sheriff (unconfirmed — from foundation post)</div>
+  </div>
+</article>
+<article class="row hold">
+  <div class="r-main">
+    <div class="r-name">Rhonda &quot;Lilly&quot; Bennett</div>
+    <div class="r-meta">Age 16 &nbsp;·&nbsp; SC &nbsp;·&nbsp; Missing since 09/06/2026</div>
+    <div class="r-note">needs agency/AWARE/AVFTV verification</div>
+  </div>
+  <div class="r-side">
+    <span class="pill hold">ON HOLD</span>
+    <a class="call" href="tel:+18036421761">Aiken County Sheriff&#x27;s Office 803-642-1761; The Rescue Squad 980-358-8463<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row hold">
+  <div class="r-main">
+    <div class="r-name">Ricky Hughes</div>
+    <div class="r-meta">Age 69 &nbsp;·&nbsp; TX &nbsp;·&nbsp; Missing since 09/23/2026</div>
+    <div class="r-note">flyer built 2026-09-25 (TX Silver Alert, full-picture letterbox); counts toward next reel queue</div>
+  </div>
+  <div class="r-side">
+    <span class="pill hold">ON HOLD</span>
+    <a class="call" href="tel:+19032371170">Longview Police Department (903) 237-1170<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row hold">
+  <div class="r-main">
+    <div class="r-name">Ryan Thomas</div>
+    <div class="r-meta">Age — &nbsp;·&nbsp; NC &nbsp;·&nbsp; Missing since 09/18/2026</div>
+    <div class="r-note">STILL HOLD 2026-09-26 12:16 sweep: no CMPD record or case A0918223200 match; only non-authority family TikToks.</div>
+  </div>
+  <div class="r-side">
+    <span class="pill hold">ON HOLD</span>
+    <a class="call" href="tel:+17043367600">Charlotte-Mecklenburg Police Dept (704) 336-7600, case A0918223200<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row hold">
+  <div class="r-main">
+    <div class="r-name">Victoria Mervine</div>
+    <div class="r-meta">Age 13 &nbsp;·&nbsp; WA &nbsp;·&nbsp; Missing since 09/15/2026</div>
+    <div class="r-note">STILL HOLD 2026-09-26 12:16 sweep: MyBellinghamNow + prior outlets confirm WSP MIPA 9/22 on behalf of Lummi Nation PD; no live WSP/Lummi page found.</div>
+  </div>
+  <div class="r-side">
+    <span class="pill hold">ON HOLD</span>
+    <a class="call" href="tel:+13603122274">Lummi Nation PD non-emergency 360-312-2274 or 911<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+<article class="row hold">
+  <div class="r-main">
+    <div class="r-name">Zavannah Younger</div>
+    <div class="r-meta">Age — &nbsp;·&nbsp; AZ &nbsp;·&nbsp; Missing since 09/19/2026</div>
+    <div class="r-note">STILL HOLD 2026-09-26 12:16 sweep: zero matches anywhere.</div>
+  </div>
+  <div class="r-side">
+    <span class="pill hold">ON HOLD</span>
+    <a class="call" href="tel:+14809828260">Apache Junction PD (480) 982-8260 (unconfirmed)<span class="tap">TAP TO CALL</span></a>
+  </div>
+</article>
+
+<footer>
+  44 resolved case(s) cleared off this board — never repost a cleared case.<br>
+  Board refreshes with every verification sweep. Hold = needs a recheck before it goes anywhere.
+</footer>
+</body>
+</html>
